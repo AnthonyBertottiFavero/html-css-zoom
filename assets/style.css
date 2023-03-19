@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/* barra alta */
+.bar-top {
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    padding-inline: 0.5rem;
+    font-size: 12px;
+}
+
+.btn {
+    background-color: #4A4A4A;
+    /* color: white; */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer; /* modificato con correzione */
+}
+
+.btn:hover {
+    background-color: blue; /* modificato con correzione */
+}
+
+
+
+
+/* main */
+main {
+    height: calc(100vh - 3rem - 5rem);
+    overflow-y: auto; /* modificato con correzione */
+}
+
+.container {
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 0.5rem; */
+    justify-content: center;
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+}
+
+.card {
+    position: relative;
+    width: calc((100% - 0.5rem*6) / 7);
+    aspect-ratio: 1.6 / 1; /* modificato con correzione */
+    /* flex: 0 0 240px; */ /* modificato con correzione */
+}
+
+.card img {
+    display: block; /* modificato con correzione */
+    width: 100%;
+    height: 100%; /* modificato con correzione */
+    object-fit: cover; /* modificato con correzione */
+	object-position: center; /* modificato con correzione */
+}
+
+.card .tag {
+    position: absolute;
+    left: 0px;
+    bottom: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+
+
+
+
+/* barra inferiore */
+.bar-bottom {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    overflow-x: hidden; /* modificato con correzione */
+}
+
+.bottom-left {
+    display: flex;
+}
+
+.btn-dash {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.btn-dash:hover {
+    cursor: pointer;
+    background-color: #a59d9d;
+}
+
+.btn-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%; 
+}
+
+.btn-right i {
+    font-size: 1.8rem;
+    /* padding-bottom: 0.3rem; */
+}
+
+/* .btn-right .text {
+    padding-bottom: 0.4rem;
+} */
+
+.bottom-center {
+    display: flex;
+}
+
+#dash-ico {
+    color: #4BC600;
+}
+
+.bottom-right {
+    display: flex;
+}
+
+.bottom-right .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    padding-inline: 1rem;
+    border-radius: 0;
+}
